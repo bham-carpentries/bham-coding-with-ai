@@ -25,83 +25,67 @@ For this workshop, we use a CSV file that is a subset of the teaching-focused Po
 
 ### AI Tool
 
-You need to be able to access an AI Chat tool such as [ChatGPT](https://chatgpt.com/) or Microsoft CoPilot.
+You need to be able to access an AI Chat tool such as Microsoft CoPilot.
 
-### Anaconda Navigator
++ Navigate to <https://copilot.microsoft.com//> 
++ !IMPORTANT: Check that you are logged in using your work account
+  (University of Birmingham email address) rather than your personal
+  account.
 
-To run the code examples used in this workshop, you will need a way to execute Python code on your computer.
+### Python 
 
-The instructor will be using **Jupyter Notebooks via Anaconda Navigator**. Unless you already have a preferred Python setup, we recommend installing **Anaconda Navigator** and running the examples using **Jupyter Notebooks** from within it. This provides a simple, self-contained environment with all required tools pre-installed.  Instructions to install Anaconda Navigator on University of Southampton computers and personal computers are in the blocks below:
+[Python](https://python.org) is widely used in research computing, and great for general-purpose programming tasks.  Installing all of its research packages individually can be a bit difficult, so we recommend [Conda-forge](https://conda-forge.org/download), an all-in-one installer.
 
+Regardless of how you choose to install it, **please make sure you install a Python version >= 3.9** (e.g. 3.11 is fine, 3.6 is not).
 
-:::::::::::::::: spoiler
+We will teach Python using the [Jupyter Notebook](https://jupyter.org), a programming environment that runs in a web browser (Jupyter Notebook will be installed by Miniforge). For this to work you will need a reasonably up-to-date browser. The current versions of the Chrome, Safari and Firefox browsers are all [supported](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility) (some older browsers, including Internet Explorer version 9 and below, are not).
 
-### University of Southampton Computers
+#### Steps:
 
-If you are using a computer provided by the University of Southampton, please use the 'Software Center' icon to download Anaconda Navigator. This icon is on the desktop of all university-managed laptops, desktops and CLS workstations used by students and staff. You can install the most common software types from this shortcut.
+1. If you already have Python 3.9 or later installed and can run Jupyter Notebooks or Jupyter Lab, you can skip ahead to step 2.
 
-::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::: tab
 
+### Lab PC
 
-:::::::::::::::: spoiler
+  a. Open [AppsAnywhere](https://apps.bham.ac.uk) from the Windows Desktop.
+  b. Login to your University Microsoft account when prompted.
+  c. Allow the browser to open the AppsAnywhere browser.
+  d. In the search bar, search for "miniforge", which should bring up "Miniforge Python 24.3.0-0 with All school addons".
+  e. Select "Launch" next to Miniforge or on its description page.
+  f. When ready, launch Miniforge by pressing the Launch icor or double-clicking.
+  g. This brings up a file folder, where you should double-click on "Miniforge Prompt".
 
-### Personal Computers
+### Other
 
-Follow these steps to install **Anaconda Navigator** on your personal computer. The process is similar on Windows, macOS, and Linux.
+a. Follow Miniforge's [download and installation](https://conda-forge.org/download/) and instructions for your respective operating system. If you are using a Windows machine, make sure you mark the option to "Add Miniforge3 to my PATH environment variable".
+b. If you are using Mac or Linux, open the 'Terminal'. If you are using Windows, open the 'Command Prompt' or 'Miniforge Prompt'.
 
-### Step 1: Go to the Anaconda Website
-1. Open a web browser.
-2. Visit: https://www.anaconda.com/products/distribution
-
-### Step 2: Choose the Installer
-1. Click **Get Started**.
-2. Select the **Anaconda Distribution** installer for your operating system:
-   - **Windows**
-   - **macOS**
-   - **Linux**
-3. Choose the **64-bit graphical installer** unless you have a specific reason to use another option.
-
-### Step 3: Download the Installer
-1. The installer file will begin downloading automatically.
-2. Wait for the download to complete (this may take a few minutes).
-
-### Step 4: Run the Installer
-- **Windows**
-  1. Double-click the downloaded `.exe` file.
-  2. Click **Next** through the welcome screens.
-  3. Accept the license agreement.
-  4. Choose **Just Me** when prompted.
-  5. Use the default installation location.
-  6. Click **Install**.
-
-- **macOS**
-  1. Double-click the downloaded `.pkg` file.
-  2. Follow the on-screen instructions.
-  3. Accept the license agreement.
-  4. Use the default installation settings.
-  5. Click **Install** (you may be asked for your computer password).
-
-- **Linux**
-  1. Open a terminal.
-  2. Navigate to the folder containing the downloaded `.sh` file.
-  3. Run the installer: `bash Anaconda3-*.sh`
-  4. Follow the on-screen prompts and accept the defaults.
-
-### Step 5: Launch Anaconda Navigator
-1. After installation completes, open **Anaconda Navigator**:
-   - On Windows or macOS: search for *Anaconda Navigator* in your applications.
-   - On Linux: run `anaconda-navigator` from the terminal.
-2. Wait for the Navigator interface to load.
-
-### Step 6: Verify Installation
-1. In Anaconda Navigator, find **Jupyter Notebook**.
-2. Click **Launch**.
-3. If Jupyter opens in your web browser, the installation was successful.
-
-If Anaconda Navigator does not open or you encounter issues, restarting your computer often resolves initial setup problems.
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-::::::::::::::::::::::::
+2. Activate the base conda environment by typing and running the code below to activate your environment.
+
+```terminal
+conda activate
+```
+
+### Jupiter Lab and Other Dependencies
 
 
+3. Install the necessary packages by running:
+```terminal
+pip install pandas matplotlib jupyterlab
+```
+
+4. Start Jupyter Lab by running: 
+```terminal
+jupyter lab
+```
+
+5. In a new Jupyter Notebook run the following code in a cell to check the necessary libraries can be loaded:
+```python
+import matplotlib as plt
+import pandas as pd
+```
 

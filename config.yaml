@@ -34,13 +34,13 @@ life_cycle: 'pre-alpha'
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/Southampton-RSG-Training/coding-with-ai' # FIXME
+source: 'https://github.com/bham-carpentries/bham-coding-with-ai' # FIXME
 
 # Default branch of your lesson
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'p.k.broadbent@soton.ac.uk'
+contact: 'k.r.kopec-harding@bham.ac.uk'
 
 # Navigation ------------------------------------------------
 #

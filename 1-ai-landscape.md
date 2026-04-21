@@ -217,8 +217,7 @@ LLM-powered services that plan and execute the entire development process, from 
 AI-powered development environments that assist with complex, multi-file projects, handling entire codebases, version control, and sophisticated development workflows. Examples: Cursor, GitHub Copilot, Claude Code, Google Colab
 
 
-This workshop will stick to Level 1. The intermediate-level course [Developing Research Software with AI Tools](https://southampton-rsg-training.github.io/research-software-ai-tools/) addresses how you would work within Level 4. 
-
+This workshop will stick to Level 1. 
 
 
 ::::::::::::::::::::::::::::::::::::: challenge 
