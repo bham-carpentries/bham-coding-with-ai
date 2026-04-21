@@ -482,8 +482,6 @@ In this episode, we have used separate interfaces to interact with AI and to run
 - **Privacy and security risks**: The AI may send code snippets to cloud services for processing. Sensitive data or unpublished research could be exposed if this is not carefully managed.
 
 
-For training on IDE-integrated AI assistants see [Developing Research Software with AI Tools](https://southampton-rsg-training.github.io/research-software-ai-tools/)
-
 ::::::::::::::::::::::::::::::::::::: keypoints 
 - Delegating full software development to AI without understanding the code introduces technical, ethical, and reliability risks.  
 - AI tools should function as assistants, not autonomous developers, supporting learning, debugging, and code generation.  
