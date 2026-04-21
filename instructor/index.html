@@ -277,10 +277,13 @@
 
 <p>This is a new lesson built with <a href="https://carpentries.github.io/sandpaper-docs" class="external-link">The Carpentries
 Workbench</a>.</p>
-<p>These training materials were developed by the <strong>Southampton
-Research Software Group</strong>. The development of this course was
-funded through the EPSRC Doctoral Landscape Award EP/Z534894/1 2025
-additional skills funding underpinning the pipeline for AI skills.</p>
+<p>These training materials are adapted from “Coding with AI:
+Opportunities and Responsibilities for Researchers” developed by the
+<strong>Southampton Research Software Group</strong> under <a href="LICENSE.html">CC-BY 4.0</a></p>
+<p>The development of the original course at Southampton was funded
+through the EPSRC Doctoral Landscape Award EP/Z534894/1 2025 additional
+skills funding underpinning the pipeline for AI skills.</p>
+<p>Changes to the original materials are recorded in ATTRIBUTION.md.</p>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
@@ -375,129 +378,90 @@ suitable for computational training and learning exercises.</p>
 </section><section><h2 class="section-heading" id="software-setup">Software Setup<a class="anchor" aria-label="anchor" href="#software-setup"></a></h2>
 <hr class="half-width"><div class="section level3">
 <h3 id="ai-tool">AI Tool<a class="anchor" aria-label="anchor" href="#ai-tool"></a></h3>
-<p>You need to be able to access an AI Chat tool such as <a href="https://chatgpt.com/" class="external-link">ChatGPT</a> or Microsoft CoPilot.</p>
-</div>
-<div class="section level3">
-<h3 id="anaconda-navigator">Anaconda Navigator<a class="anchor" aria-label="anchor" href="#anaconda-navigator"></a></h3>
-<p>To run the code examples used in this workshop, you will need a way
-to execute Python code on your computer.</p>
-<p>The instructor will be using <strong>Jupyter Notebooks via Anaconda
-Navigator</strong>. Unless you already have a preferred Python setup, we
-recommend installing <strong>Anaconda Navigator</strong> and running the
-examples using <strong>Jupyter Notebooks</strong> from within it. This
-provides a simple, self-contained environment with all required tools
-pre-installed. Instructions to install Anaconda Navigator on University
-of Southampton computers and personal computers are in the blocks
-below:</p>
-<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
-  <h3 class="accordion-header" id="headingSpoiler1">
-  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
-  University of Southampton Computers
-  </h3>
-</button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
-<div class="accordion-body">
-<p>If you are using a computer provided by the University of
-Southampton, please use the ‘Software Center’ icon to download Anaconda
-Navigator. This icon is on the desktop of all university-managed
-laptops, desktops and CLS workstations used by students and staff. You
-can install the most common software types from this shortcut.</p>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSpoiler2" class="accordion spoiler-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
-  <h3 class="accordion-header" id="headingSpoiler2">
-  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
-  Personal Computers
-  </h3>
-</button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
-<div class="accordion-body">
-<p>Follow these steps to install <strong>Anaconda Navigator</strong> on
-your personal computer. The process is similar on Windows, macOS, and
-Linux.</p>
-<div class="section level3">
-<h3 id="step-1-go-to-the-anaconda-website">Step 1: Go to the Anaconda Website<a class="anchor" aria-label="anchor" href="#step-1-go-to-the-anaconda-website"></a></h3>
-<ol style="list-style-type: decimal"><li>Open a web browser.</li>
-<li>Visit: <a href="https://www.anaconda.com/products/distribution" class="external-link uri">https://www.anaconda.com/products/distribution</a>
+<p>You need to be able to access an AI Chat tool such as Microsoft
+CoPilot.</p>
+<ul><li>Navigate to <a href="https://copilot.microsoft.com//" class="external-link uri">https://copilot.microsoft.com//</a>
 </li>
-</ol></div>
-<div class="section level3">
-<h3 id="step-2-choose-the-installer">Step 2: Choose the Installer<a class="anchor" aria-label="anchor" href="#step-2-choose-the-installer"></a></h3>
-<ol style="list-style-type: decimal"><li>Click <strong>Get Started</strong>.</li>
-<li>Select the <strong>Anaconda Distribution</strong> installer for your
-operating system:
-<ul><li><strong>Windows</strong></li>
-<li><strong>macOS</strong></li>
-<li><strong>Linux</strong></li>
-</ul></li>
-<li>Choose the <strong>64-bit graphical installer</strong> unless you
-have a specific reason to use another option.</li>
-</ol></div>
-<div class="section level3">
-<h3 id="step-3-download-the-installer">Step 3: Download the Installer<a class="anchor" aria-label="anchor" href="#step-3-download-the-installer"></a></h3>
-<ol style="list-style-type: decimal"><li>The installer file will begin downloading automatically.</li>
-<li>Wait for the download to complete (this may take a few
-minutes).</li>
-</ol></div>
-<div class="section level3">
-<h3 id="step-4-run-the-installer">Step 4: Run the Installer<a class="anchor" aria-label="anchor" href="#step-4-run-the-installer"></a></h3>
-<ul><li>
-<strong>Windows</strong>
-<ol style="list-style-type: decimal"><li>Double-click the downloaded <code>.exe</code> file.</li>
-<li>Click <strong>Next</strong> through the welcome screens.</li>
-<li>Accept the license agreement.</li>
-<li>Choose <strong>Just Me</strong> when prompted.</li>
-<li>Use the default installation location.</li>
-<li>Click <strong>Install</strong>.</li>
-</ol></li>
-<li>
-<strong>macOS</strong>
-<ol style="list-style-type: decimal"><li>Double-click the downloaded <code>.pkg</code> file.</li>
-<li>Follow the on-screen instructions.</li>
-<li>Accept the license agreement.</li>
-<li>Use the default installation settings.</li>
-<li>Click <strong>Install</strong> (you may be asked for your computer
-password).</li>
-</ol></li>
-<li>
-<strong>Linux</strong>
-<ol style="list-style-type: decimal"><li>Open a terminal.</li>
-<li>Navigate to the folder containing the downloaded <code>.sh</code>
-file.</li>
-<li>Run the installer: <code>bash Anaconda3-*.sh</code>
-</li>
-<li>Follow the on-screen prompts and accept the defaults.</li>
-</ol></li>
+<li>!IMPORTANT: Check that you are logged in using your work account
+(University of Birmingham email address) rather than your personal
+account.</li>
 </ul></div>
 <div class="section level3">
-<h3 id="step-5-launch-anaconda-navigator">Step 5: Launch Anaconda Navigator<a class="anchor" aria-label="anchor" href="#step-5-launch-anaconda-navigator"></a></h3>
-<ol style="list-style-type: decimal"><li>After installation completes, open <strong>Anaconda
-Navigator</strong>:
-<ul><li>On Windows or macOS: search for <em>Anaconda Navigator</em> in your
-applications.</li>
-<li>On Linux: run <code>anaconda-navigator</code> from the
-terminal.</li>
-</ul></li>
-<li>Wait for the Navigator interface to load.</li>
+<h3 id="python">Python<a class="anchor" aria-label="anchor" href="#python"></a></h3>
+<p><a href="https://python.org" class="external-link">Python</a> is widely used in research
+computing, and great for general-purpose programming tasks. Installing
+all of its research packages individually can be a bit difficult, so we
+recommend <a href="https://conda-forge.org/download" class="external-link">Conda-forge</a>, an
+all-in-one installer.</p>
+<p>Regardless of how you choose to install it, <strong>please make sure
+you install a Python version &gt;= 3.9</strong> (e.g. 3.11 is fine, 3.6
+is not).</p>
+<p>We will teach Python using the <a href="https://jupyter.org" class="external-link">Jupyter
+Notebook</a>, a programming environment that runs in a web browser
+(Jupyter Notebook will be installed by Miniforge). For this to work you
+will need a reasonably up-to-date browser. The current versions of the
+Chrome, Safari and Firefox browsers are all <a href="https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility" class="external-link">supported</a>
+(some older browsers, including Internet Explorer version 9 and below,
+are not).</p>
+<div class="section level4">
+<h4 id="steps">Steps:<a class="anchor" aria-label="anchor" href="#steps"></a></h4>
+<ol style="list-style-type: decimal"><li>If you already have Python 3.9 or later installed and can run
+Jupyter Notebooks or Jupyter Lab, you can skip ahead to step 2.</li>
+</ol><div class="tabs">
+<nav><div id="nav-tab-1" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-1-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-1" type="button" role="tab" aria-controls="nav-tabpanel-1-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-1-1">
+  Lab PC
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-1-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-2" type="button" role="tab" aria-controls="nav-tabpanel-1-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-1-2">
+  Other
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-1" class="tab-content">
+<div id="nav-tabpanel-1-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-1">
+<ol style="list-style-type: lower-alpha"><li>Open <a href="https://apps.bham.ac.uk" class="external-link">AppsAnywhere</a> from the
+Windows Desktop.</li>
+<li>Login to your University Microsoft account when prompted.</li>
+<li>Allow the browser to open the AppsAnywhere browser.</li>
+<li>In the search bar, search for “miniforge”, which should bring up
+“Miniforge Python 24.3.0-0 with All school addons”.</li>
+<li>Select “Launch” next to Miniforge or on its description page.</li>
+<li>When ready, launch Miniforge by pressing the Launch icor or
+double-clicking.</li>
+<li>This brings up a file folder, where you should double-click on
+“Miniforge Prompt”.</li>
 </ol></div>
+<div id="nav-tabpanel-1-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-2">
+<ol style="list-style-type: lower-alpha"><li>Follow Miniforge’s <a href="https://conda-forge.org/download/" class="external-link">download and installation</a>
+and instructions for your respective operating system. If you are using
+a Windows machine, make sure you mark the option to “Add Miniforge3 to
+my PATH environment variable”.</li>
+<li>If you are using Mac or Linux, open the ‘Terminal’. If you are using
+Windows, open the ‘Command Prompt’ or ‘Miniforge Prompt’.</li>
+</ol></div>
+</div>
+</div>
+<ol start="2" style="list-style-type: decimal"><li>Activate the base conda environment by typing and running the code
+below to activate your environment.</li>
+</ol><pre class="terminal"><code>conda activate</code></pre>
+</div>
+</div>
 <div class="section level3">
-<h3 id="step-6-verify-installation">Step 6: Verify Installation<a class="anchor" aria-label="anchor" href="#step-6-verify-installation"></a></h3>
-<ol style="list-style-type: decimal"><li>In Anaconda Navigator, find <strong>Jupyter Notebook</strong>.</li>
-<li>Click <strong>Launch</strong>.</li>
-<li>If Jupyter opens in your web browser, the installation was
-successful.</li>
-</ol><p>If Anaconda Navigator does not open or you encounter issues,
-restarting your computer often resolves initial setup problems.</p>
-</div>
-</div>
-</div>
-</div>
+<h3 id="jupiter-lab-and-other-dependencies">Jupiter Lab and Other Dependencies<a class="anchor" aria-label="anchor" href="#jupiter-lab-and-other-dependencies"></a></h3>
+<ol start="3" style="list-style-type: decimal"><li>Install the necessary packages by running:</li>
+</ol><pre class="terminal"><code>pip install pandas matplotlib jupyterlab</code></pre>
+<ol start="4" style="list-style-type: decimal"><li>Start Jupyter Lab by running:</li>
+</ol><pre class="terminal"><code>jupyter lab</code></pre>
+<ol start="5" style="list-style-type: decimal"><li>In a new Jupyter Notebook run the following code in a cell to check
+the necessary libraries can be loaded:</li>
+</ol><div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="im">import</span> matplotlib <span class="im">as</span> plt</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1" aria-label="code-block-4-2"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code></pre>
 </div>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
@@ -519,14 +483,14 @@ any links that you are not going to use.
         <p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
 
-        <a href="https://github.com/Southampton-RSG-Training/coding-with-ai/edit/main/index.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/bham-carpentries/bham-coding-with-ai/edit/main/index.md" class="external-link">Edit on GitHub</a>
 
 	
-        | <a href="https://github.com/Southampton-RSG-Training/coding-with-ai/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
-        | <a href="https://github.com/Southampton-RSG-Training/coding-with-ai/" class="external-link">Source</a></p>
+        | <a href="https://github.com/bham-carpentries/bham-coding-with-ai/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
+        | <a href="https://github.com/bham-carpentries/bham-coding-with-ai/" class="external-link">Source</a></p>
         <p>
         <a href="../citation.html">Cite</a>
-        | <a href="mailto:p.k.broadbent@soton.ac.uk">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+        | <a href="mailto:k.r.kopec-harding@bham.ac.uk">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 		</div>
 		<div class="col-md-6">
 
@@ -545,15 +509,15 @@ any links that you are not going to use.
     {
   "@context": "https://schema.org",
   "@type": "LearningResource",
-  "@id": "https://Southampton-RSG-Training.github.io/coding-with-ai/instructor/index.html",
+  "@id": "https://bham-carpentries.github.io/bham-coding-with-ai/instructor/index.html",
   "inLanguage": "en",
   "dct:conformsTo": "https://bioschemas.org/profiles/LearningResource/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
   "keywords": "AI, GPT, LLM, software",
   "name": "Coding with AI: Opportunities and Responsibilities for Researchers",
   "creativeWorkStatus": "active",
-  "url": "https://Southampton-RSG-Training.github.io/coding-with-ai/instructor/index.html",
-  "identifier": "https://Southampton-RSG-Training.github.io/coding-with-ai/instructor/index.html",
+  "url": "https://bham-carpentries.github.io/bham-coding-with-ai/instructor/index.html",
+  "identifier": "https://bham-carpentries.github.io/bham-coding-with-ai/instructor/index.html",
   "dateCreated": "2026-09-01",
   "dateModified": "2026-04-21",
   "datePublished": "2026-04-21"
